@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Quiz App</h1>
+    <div id="question-container">
+      <p id="questions"></p>
+      <div id="answers"></div>
+    </div>
+    <div id="controls-container">
+      <button id="prev-button" class="btn" onclick="prevQuestion()" disabled>Previous</button>
+      <button id="next-button" class="btn" onclick="nextQuestion()">Next</button>
+      <button id="start-button" class="btn" onclick="startQuiz()">Start Quiz</button>
+      <div id="timer-container">
+        <span id="timer-text">Time Left: <span id="timer">60</span></span>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
